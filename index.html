@@ -57,23 +57,6 @@ nav li a:hover {
 
 <body>
 
-  <p class="quotes">
-  <script	language="JavaScript">
-  	var Quotation=new Array()
-
-	Quotation[0] = "There are 2 hard problems in computer science: cache invalidation, naming things, and off-by-1 errors. ― Leon Bambrick";
-
-  	var Q = Quotation.length;
-  	var whichQuotation=Math.round(Math.random()*(Q-1));
-
-  	function showQuotation()
-    {
-		document.write(Quotation[whichQuotation]);
-	}
-
-  	showQuotation();
-  </script>
-  </p>
 
 <header>
   <h1>Victor's CS Site</h1>
@@ -124,7 +107,27 @@ nav li a:hover {
 </article>
 
 <footer>
-<p>Computers are useless.  They can only give you answers.  --Pablo Picasso--</p>
+  <p class="quotes">
+  <script	language="JavaScript">
+  	var Quotation=new Array()
+
+	Quotation[0] = "There are 2 hard problems in computer science: cache invalidation, naming things, and off-by-1 errors. - Leon Bambrick -";
+	Quotation[1] = "Computers are useless.  They can only give you answers.  - Pablo Picasso -";
+
+  	var Q = Quotation.length;
+  	var whichQuotation=Math.round(Math.random()*(Q-1));
+
+  	function showQuotation()
+    {
+		document.write(Quotation[whichQuotation]);
+	}
+
+  	showQuotation();
+  </script>
+  </p>
+
+
+<p></p>
 </footer>
 
 </body>
