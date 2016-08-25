@@ -77,7 +77,7 @@ a.notnav:visited {
 	background-color:#F4F4F8;
 }
 
-code.block {
+code.cblock {
 	margin: 5px;
 	padding: 5px;
 	color: blue;
@@ -85,5 +85,5 @@ code.block {
 
 code {
 	color: blue;
-	font-size: 1em;
+	font-size: 1.2em;
 }
