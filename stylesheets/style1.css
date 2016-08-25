@@ -47,6 +47,13 @@ nav li a:hover {
 a.active:hover {
 	color: white;
     background-color: #339966;
+    text-decoration: none;
+}
+
+a.active:link {
+	color: white;
+    background-color: #339966;
+    text-decoration: none;
 }
 
 .msg_list {
