@@ -76,3 +76,9 @@ a.notnav:visited {
 	padding: 5px 10px 15px;
 	background-color:#F4F4F8;
 }
+
+code.block {
+	margin: 5px;
+	padding: 5px;
+	color: blue;
+}
