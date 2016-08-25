@@ -43,3 +43,20 @@ nav li a:hover {
 	color: white;
     background-color: #339966;
 }
+
+.msg_list {
+	margin: 0px;
+	padding: 0px;
+	width: 383px;
+}
+.msg_head {
+	padding: 5px 10px;
+	cursor: pointer;
+	position: relative;
+	background-color:#FFCCCC;
+	margin:1px;
+}
+.msg_body {
+	padding: 5px 10px 15px;
+	background-color:#F4F4F8;
+}
