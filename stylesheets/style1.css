@@ -82,3 +82,8 @@ code.block {
 	padding: 5px;
 	color: blue;
 }
+
+code {
+	color: blue;
+	font-size: 0.7em;
+}
