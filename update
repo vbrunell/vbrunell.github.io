@@ -1,0 +1,4 @@
+#!/usr/bin/bash
+
+git commit -a -m "foobar"
+git push origin master
