@@ -58,12 +58,20 @@ function(){
 <h2>RISC/MIPS</h2>
 
 <div class="msg_list">
-<p class="msg_head">Click on me</p>
-<div class="msg_body">
-<a class="active" href="http://cis.stvincent.edu/html/tutorials/swd/bintrees/bintrees.html">Binary Trees</a>
-<br><a class="active" href="http://cis.stvincent.edu/html/tutorials/swd/avltrees/avltrees.html">AVL Trees</a>
-<br><a class="active" href="http://cis.stvincent.edu/html/tutorials/swd/hash/hash.html">Hash Tables</a>
-</div>
+	<p class="msg_head">What are the three classes of MIPS instructions?  Describe each.</p>
+	<div class="msg_body">
+		--ALU instructions--
+		These instructions take either two registers or a register and a sign-extended immediate (called ALU immediate instructions, they have a 16-bit offset in MIPS), operate on them, and store the result into a third register.
+
+		--Load and store instructions--
+		These instructions take a register source, called the <b>base register</b>, and an immediate field (16-bit in MIPS), called the offset, as operands.
+		The sum—called the <b>effective address</b>—of the contents of the base register and the sign-extended offset is used as a memory address.
+
+		--Branches and jumps--
+		Branches are conditional transfers of control.
+		In all RISC architectures, the branch destination is obtained by adding a sign-extended offset (16 bits in MIPS) to the current PC.
+
+	</div>
 </div>
 </div>
 
