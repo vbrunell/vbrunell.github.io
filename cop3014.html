@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<link rel="stylesheet" type="text/css" href="stylesheets/style1.css">
+
+<title>Victor's CS Site - COP3014</title>
+<meta charset="utf-8">
+<meta name="description" content="Computer Science Website">
+<meta name="keywords" content="Computer Science, Links">
+<meta name="author" content="Victor Brunell">
+
+<!--[if lt IE 9]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js">
+</script>
+<![endif]-->
+
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script type="text/javascript">
+$(document).ready(
+function(){
+
+	//hide the all of the element with class msg_body
+	$(".msg_body").hide();
+
+  	//toggle the componenet with class msg_body
+  	$(".msg_head").click(
+	function(){ $(this).next(".msg_body").slideToggle(600); }
+	);
+});
+</script>
+
+</head>
+
+<body>
+
+<header>
+  <h1 class="header">Victor's CS Site [ COP3014 ]</h1>
+</header>
+
+<nav>
+<ul>
+  <li><a class="active" href="index.html">About</a></li>
+  <li><a class="active" href="links.html">Links</a></li>
+  <li><a class="active" href="students.html">Students</a></li>
+  <li><a class="active" href="contact.html">Contact</a></li>
+</ul>
+</nav>
+
+<article>
+
+<section>
+
+<h2>Programming I</h2>
+
+<div class="boxed">
+<h2>Practice Questions</h2>
+
+	<!--
+	<div class="msg_list">
+	<p class="msg_head"></p>
+	<div class="msg_body">
+		<p>
+		</p>
+	</div>
+	</div>
+	-->
+
+	<div class="msg_list">
+	<p class="msg_head">What are the three classes of MIPS instructions?  Describe each.</p>
+	<div class="msg_body">
+		<p>Fundamental data types are basic types implemented directly by the language that represent the basic storage units supported natively by most systems. They can mainly be classified into:</p>
+	<ul>
+		<li>Character types: They can represent a single character, such as 'A' or '$'. The most basic type is char, which is a one-byte character. Other types are also provided for wider characters.</li>
+		<li>Numerical integer types: They can store a whole number value, such as 7 or 1024. They exist in a variety of sizes, and can either be signed or unsigned, depending on whether they support negative values or not.</li>
+		<li>Floating-point types: They can represent real values, such as 3.14 or 0.01, with different levels of precision, depending on which of the three floating-point types is used.</li>
+		<li>Boolean type: The boolean type, known in C++ as bool, can only represent one of two states, true or false.</li>
+	</ul>
+	</div>
+	</div>
+
+</div>
+
+</section>
+
+</article>
+
+<footer>
+  <p class="quotes">
+  <script src="javascripts/quotes.js" language="JavaScript"></script>
+  </p>
+</footer>
+
+</body>
+</html>
+
