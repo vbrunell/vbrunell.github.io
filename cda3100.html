@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<link rel="stylesheet" type="text/css" href="../stylesheets/style1.css">
+
+<title>Victor's CS Site - CDA3100</title>
+<meta charset="utf-8">
+<meta name="description" content="Computer Science Website">
+<meta name="keywords" content="Computer Science, Links">
+<meta name="author" content="Victor Brunell">
+
+<!--[if lt IE 9]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js">
+</script>
+<![endif]-->
+
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script type="text/javascript">
+$(document).ready(
+function(){
+
+	//hide the all of the element with class msg_body
+	$(".msg_body").hide();
+
+  	//toggle the componenet with class msg_body
+  	$(".msg_head").click(
+	function(){ $(this).next(".msg_body").slideToggle(600); }
+	);
+});
+</script>
+
+</head>
+
+<body>
+
+<header>
+  <h1 class="header">Victor's CS Site [ CDA3100 ]</h1>
+</header>
+
+<nav>
+<ul>
+  <li><a class="active" href="index.html">About</a></li>
+  <li><a class="active" href="links.html">Links</a></li>
+  <li><a class="active" href="students.html">Students</a></li>
+  <li><a class="active" href="contact.html">Contact</a></li>
+</ul>
+</nav>
+
+<article>
+
+<section>
+
+<h2>Computer Organization I - Practice Questions</h2>
+
+<div class="boxed">
+<h2>RISC/MIPS</h2>
+<p class="msg_head">Click on me</p>
+<div class="msg_body">
+<a class="active" href="http://cis.stvincent.edu/html/tutorials/swd/bintrees/bintrees.html">Binary Trees</a>
+<br><a class="active" href="http://cis.stvincent.edu/html/tutorials/swd/avltrees/avltrees.html">AVL Trees</a>
+<br><a class="active" href="http://cis.stvincent.edu/html/tutorials/swd/hash/hash.html">Hash Tables</a>
+</div>
+
+</section>
+
+</article>
+
+<footer>
+  <p class="quotes">
+  <script src="javascripts/quotes.js" language="JavaScript"></script>
+  </p>
+</footer>
+
+</body>
+</html>
+
