@@ -44,7 +44,7 @@ nav li a:hover {
     background-color: #339966;
 }
 
-.msg_list {
+div.msg_list {
 	margin: 0px;
 	padding: 0px;
 	width: 383px;
