@@ -78,8 +78,9 @@ a.notnav:visited {
 }
 
 code.cblock {
-	margin: 5px;
-	padding: 5px;
+	border:1px;
+	margin: 2px;
+	padding: 2px;
 	color: blue;
 }
 
