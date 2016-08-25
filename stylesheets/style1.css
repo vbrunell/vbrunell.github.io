@@ -51,6 +51,12 @@ a.notnav:hover {
 }
 
 a.notnav:link {
+	color: blue;
+    text-decoration: none;
+}
+
+a.notnav:visited {
+	color: red;
     text-decoration: none;
 }
 
