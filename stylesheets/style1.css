@@ -56,7 +56,7 @@ a.notnav:link {
 }
 
 a.notnav:visited {
-	color: red;
+	color: blue;
     text-decoration: none;
 }
 
