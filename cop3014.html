@@ -359,6 +359,40 @@ function(){
 	</div>
 	</div>
 
+	<div class="msg_list">
+		<p class="msg_head">Using the following struct, write a program that reads the title and the year of a movie from the user and stores it in <code>the_movie</code>.</p>
+		<pre><code class="cblock">
+		struct movies_t {
+			  string title;
+			    int year;
+		} the_movie;
+		</code></pre>
+	<div class="msg_body">
+		<p>
+		<pre><code class="cblock">
+		#include &lt;iostream&gt;
+		using namespace std;
+
+		struct movies_t {
+			  string title;
+			    int year;
+		} the_movie;
+
+		int main ()
+		{
+		  getline (cin,yours.title);
+		  cout &lt;&lt; "Enter year: ";
+		  getline (cin,mystr);
+		  stringstream(mystr) &gt;&gt; yours.year;
+
+		  return 0;
+		}
+		</code></pre>
+		</p>
+	</div>
+	</div>
+
+
 </div>
 
 </section>
