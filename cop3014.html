@@ -415,10 +415,10 @@ function(){
 
 		  p1 = &amp;firstvalue;  // p1 = address of firstvalue
 		  p2 = &amp;secondvalue; // p2 = address of secondvalue
-		  *p1 = 10;          // pointer dereference, firstvalue = 10
-		  *p2 = *p1;         // pointer dereference, secondvalue = 10
+		  *p1 = 10;          // firstvalue = 10
+		  *p2 = *p1;         // secondvalue = 10
 		  p1 = p2;           // p1 = p2 (value of pointer is copied)
-		  *p1 = 20;          // pointer dereference, secondvalue = 20
+		  *p1 = 20;          // secondvalue = 20
 
 		  cout &lt;&lt; "firstvalue is " &lt;&lt; firstvalue &lt;&lt; '\n';
 		  cout &lt;&lt; "secondvalue is " &lt;&lt; secondvalue &lt;&lt; '\n';
