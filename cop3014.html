@@ -248,7 +248,7 @@ function(){
 	</div>
 
 	<div class="msg_list">
-	<p class="msg_head">Write a program that counts down from 10 to 0 and prints the countdown to stdout. (Hint: use a <code>while</code> loop)</p>
+	<p class="msg_head">Write a program that uses a <code>while</code> loop to count down from 10 to 0 and prints the countdown to stdout.</p>
 	<div class="msg_body">
 		<p>
 		<pre><code class="cblock">
@@ -265,6 +265,32 @@ function(){
 		     cout &lt;&lt; n &lt;&lt; ", ";
 	             --n;
 		  }
+		  cout &lt;&lt; n;
+
+		  return 0;
+		}
+		</code></pre>
+
+		</p>
+	</div>
+	</div>
+
+	<div class="msg_list">
+	<p class="msg_head">Write a program that uses a <code>while</code> loop to count down from 10 to 0 and prints the countdown to stdout.</p>
+	<div class="msg_body">
+		<p>
+		<pre><code class="cblock">
+		#include &lt;iostream&gt;
+		#include &lt;string&gt;
+		using namespace std;
+
+		int main ()
+		{
+		  int n = 10;
+
+		  for (int n=10; n&gt;0; n--)
+			 cout &lt;&lt; n &lt;&lt; ", ";
+
 		  cout &lt;&lt; n;
 
 		  return 0;
