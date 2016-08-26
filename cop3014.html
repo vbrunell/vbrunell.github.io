@@ -243,23 +243,33 @@ function(){
 		  return 0;
 		}
 		</code></pre>
-
 		</p>
 	</div>
 	</div>
 
 	<div class="msg_list">
-		<p class="msg_head">Write a program that counts down from 10 to 0 and prints the countdown to stdout. (Hint: use a <code>while</code> loop)</p>
+	<p class="msg_head">Write a program that counts down from 10 to 0 and prints the countdown to stdout. (Hint: use a <code>while</code> loop)</p>
 	<div class="msg_body">
 		<p>
-		</p>
-	</div>
-	</div>
+		<pre><code class="cblock">
+		#include &lt;iostream&gt;
+		#include &lt;string&gt;
+		using namespace std;
 
-	<div class="msg_list">
-	<p class="msg_head"></p>
-	<div class="msg_body">
-		<p>
+		int main ()
+		{
+		  int n = 10;
+
+		  while (n&gt;=0)
+		  {
+			 cout &lt;&lt; n &lt;&lt; ", ";
+			 --n;
+		  }
+
+		  return 0;
+		}
+		</code></pre>
+
 		</p>
 	</div>
 	</div>
