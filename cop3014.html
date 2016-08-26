@@ -365,6 +365,7 @@ function(){
 		<p>
 		<pre><code class="cblock">
 		#include &lt;iostream&gt;
+		#include &lt;string&gt;
 		using namespace std;
 
 		struct movies_t {
@@ -386,6 +387,45 @@ function(){
 	</div>
 	</div>
 
+	<div class="msg_list">
+		<p class="msg_head">What are the values held in firstvalue and secondvalue after each assignment using pointers p1 and p2 below:
+		<code>
+		int firstvalue = 5, secondvalue = 15;
+		int * p1, * p2;
+
+		p1 = &amp;irstvalue;  // p1 = address of firstvalue
+		p2 = &amp;secondvalue; // p2 = address of secondvalue
+	  	*p1 = 10;          // value pointed to by p1 = 10
+	    *p2 = *p1;         // value pointed to by p2 = value pointed to by p1
+		p1 = p2;           // p1 = p2 (value of pointer is copied)
+		*p1 = 20;          // value pointed to by p1 = 20
+		</code>
+		</p>
+	<div class="msg_body">
+		<p>
+		<pre><code class="cblock">
+		#include &lt;iostream&gt;
+		#include &lt;string&gt;
+		using namespace std;
+
+		struct movies_t {
+		  string title;
+		  int year;
+		} the_movie;
+
+		int main ()
+		{
+		  getline (cin,yours.title);
+		  cout &lt;&lt; "Enter year: ";
+		  getline (cin,mystr);
+		  stringstream(mystr) &gt;&gt; yours.year;
+
+		  return 0;
+		}
+		</code></pre>
+		</p>
+	</div>
+	</div>
 
 </div>
 
