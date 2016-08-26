@@ -223,14 +223,13 @@ function(){
 		<p>
 		<pre><code class="cblock">
 		#include &lt;iostream&gt;
-		#include &lt;string&gt;
 		using namespace std;
 
 		int main ()
 		{
 		  int x;
 
-		  cout &lt;&lt; "Please enter an interger value:";
+		  cout &lt;&lt; "Please enter an integer value:";
 		  cin &gt;&gt; x;
 
 		  if (x &gt; 0)
@@ -253,7 +252,6 @@ function(){
 		<p>
 		<pre><code class="cblock">
 		#include &lt;iostream&gt;
-		#include &lt;string&gt;
 		using namespace std;
 
 		int main ()
@@ -281,7 +279,6 @@ function(){
 		<p>
 		<pre><code class="cblock">
 		#include &lt;iostream&gt;
-		#include &lt;string&gt;
 		using namespace std;
 
 		int main ()
@@ -315,7 +312,6 @@ function(){
 		<p>
 		<pre><code class="cblock">
 		#include &lt;iostream&gt;
-		#include &lt;string&gt;
 		using namespace std;
 
 		int addition (int a, int b)
@@ -330,6 +326,31 @@ function(){
 		  int z;
 		  z = addition (5,3);
 		  cout &lt;&lt; "The result is " &lt;&lt; z;
+
+		  return 0;
+		}
+		</code></pre>
+		</p>
+	</div>
+	</div>
+
+	<div class="msg_list">
+		<p class="msg_head">Write a program that sums the values held in the array <code>int foo [] = {16, 2, 77, 40, 12071};</code> and prints the sum to stdout.</p>
+	<div class="msg_body">
+		<p>
+		<pre><code class="cblock">
+		#include &lt;iostream&gt;
+		using namespace std;
+
+		int main ()
+		{
+		  int foo [] = {16, 2, 77, 40, 12071};
+		  int n, result=0;
+
+		  for ( n=0 ; n&lt;5 ; ++n )
+		     result += foo[n];
+
+		  cout &lt;&lt; result;
 
 		  return 0;
 		}
