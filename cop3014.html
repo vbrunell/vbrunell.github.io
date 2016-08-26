@@ -193,9 +193,24 @@ function(){
 	</div>
 
 	<div class="msg_list">
-	<p class="msg_head"></p>
+		<p class="msg_head">Write a program that uses <code>string</code> and <code>getline</code> to read in a user's name and print it to stdout.</p>
 	<div class="msg_body">
 		<p>
+		<pre><code class="cblock">
+		#include <iostream>
+		#include <string>
+		using namespace std;
+
+		int main ()
+		{
+		  string mystr;
+
+		  cout &lt;&lt; "What's your name? ";
+		  getline (cin, mystr);
+	      cout &lt;&lt; "Hello " &lt;&lt; mystr &lt;&lt; ".\n";
+
+		  return 0;
+		</code></pre>
 		</p>
 	</div>
 	</div>
