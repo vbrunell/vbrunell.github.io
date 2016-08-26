@@ -217,9 +217,32 @@ function(){
 	</div>
 
 	<div class="msg_list">
-	<p class="msg_head"></p>
+	<p class="msg_head">Write a program that tests if an integer variable is positive or negative and prints a message telling the user which it is.</p>
 	<div class="msg_body">
 		<p>
+		<pre><code class="cblock">
+		#include &lt;iostream&gt;
+		#include &lt;string&gt;
+		using namespace std;
+
+		int main ()
+		{
+		  int x;
+
+		  cout &lt;&lt; "Please enter an interger value:";
+	      cin &gt;&gt; x;
+
+		  if (x &gt; 0)
+	        cout &lt;&lt; "x is positive";
+	      else if (x &lt; 0)
+		    cout &lt;&lt; "x is negative";
+		  else
+		    cout &lt;&lt; "x is 0";
+
+		  return 0;
+		}
+		</code></pre>
+
 		</p>
 	</div>
 	</div>
