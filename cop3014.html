@@ -391,37 +391,45 @@ function(){
 		<p class="msg_head">What are the values held in firstvalue and secondvalue after each assignment using pointers p1 and p2 below:
 		<code><br>
 		&emsp;&emsp;<br>int firstvalue = 5, secondvalue = 15;
-		&emsp;&emsp;<br>int * p1, * p2;
+		&emsp;&emsp;<br>int * p1, * p2;<br>
 
-		&emsp;&emsp;<br>p1 = &amp;firstvalue;  // p1 = address of firstvalue
-		&emsp;&emsp;<br>p2 = &amp;secondvalue; // p2 = address of secondvalue
-		&emsp;&emsp;<br>*p1 = 10;          // value pointed to by p1 = 10
-		&emsp;&emsp;<br>*p2 = *p1;         // value pointed to by p2 = value pointed to by p1
-		&emsp;&emsp;<br>p1 = p2;           // p1 = p2 (value of pointer is copied)
-		&emsp;&emsp;<br>*p1 = 20;          // value pointed to by p1 = 20
+		&emsp;&emsp;<br>p1 = &amp;firstvalue;
+		&emsp;&emsp;<br>p2 = &amp;secondvalue;
+		&emsp;&emsp;<br>*p1 = 10;
+		&emsp;&emsp;<br>*p2 = *p1;
+		&emsp;&emsp;<br>p1 = p2;
+		&emsp;&emsp;<br>*p1 = 20;
 		</code>
 		</p>
 	<div class="msg_body">
 		<p>
 		<pre><code class="cblock">
 		#include &lt;iostream&gt;
-		#include &lt;string&gt;
 		using namespace std;
-
-		struct movies_t {
-		  string title;
-		  int year;
-		} the_movie;
 
 		int main ()
 		{
-		  getline (cin,yours.title);
-		  cout &lt;&lt; "Enter year: ";
-		  getline (cin,mystr);
-		  stringstream(mystr) &gt;&gt; yours.year;
+
+		  int firstvalue = 5, secondvalue = 15;
+		  int * p1, * p2;
+
+		  p1 = &amp;firstvalue;  // p1 = address of firstvalue
+		  p2 = &amp;secondvalue; // p2 = address of secondvalue
+		  *p1 = 10;          // firstvalue = 10
+		  *p2 = *p1;         // secondvalue = 10
+		  p1 = p2;           // p1 = p2 (value of pointer is copied)
+		  *p1 = 20;          // secondvalue = 20
+
+		  cout &lt;&lt; "firstvalue is " &lt;&lt; firstvalue &lt;&lt; '\n';
+		  cout &lt;&lt; "secondvalue is " &lt;&lt; secondvalue &lt;&lt; '\n';
+		  return 0;
 
 		  return 0;
 		}
+
+		This prints:
+				firstvalue is 10
+				secondvalue is 20
 		</code></pre>
 		</p>
 	</div>
