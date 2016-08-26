@@ -169,9 +169,24 @@ function(){
 	</div>
 
 	<div class="msg_list">
-	<p class="msg_head"></p>
+	<p class="msg_head">Read an integer value from the user, store it in a variable, and print it to stdout.</p>
 	<div class="msg_body">
 		<p>
+		<pre><code class="cblock">
+		#include &lt;iostream&gt;
+		using namespace std;
+
+		int main ()
+		{
+		  int i;
+		  cout &lt;&lt; "Please enter an integer value: ";
+		  cin &gt;&gt; i;
+		  cout &lt;&lt; "The value you entered is " &lt;&lt; i;
+		  cout &lt;&lt; " and its double is " &lt;&lt; i*2 &lt;&lt; ".\n";
+
+	      return 0;
+	  	}
+		</code></pre>
 		</p>
 	</div>
 	</div>
