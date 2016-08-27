@@ -106,9 +106,16 @@ function(){
 	</div>
 
 	<div class="msg_list">
-	<p class="msg_head"></p>
+	<p class="msg_head">Consider an R-type MIPS assembly symbolic instruction (like
+	<code>add $rd, $rs, $rt</code>). Show its machine instruction format using fields.
+	Show filed length using the range of bit position numbers.</p>
 	<div class="msg_body">
-		<p>
+		<p><pre>
+		----------------------------------------------
+		|  op  |  rs  |  rt  |  rd  | shamnt | funct |
+		----------------------------------------------
+		  31-26  25-21  20-16  15-11   10-6     5-0
+		</pre>
 		</p>
 	</div>
 	</div>
@@ -120,7 +127,7 @@ function(){
 		<p>
 		The three inputs are: the first operand bit a, the second operand bit b,
 		and the carry-in. i
-		<br>The two outputs are: carry-out and sum. Your task is to
+		<br><br>The two outputs are: carry-out and sum. Your task is to
 		design the combinational logic block that generates the sum output.
 		</p>
 	</div>
