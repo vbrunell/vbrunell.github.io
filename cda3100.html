@@ -127,9 +127,22 @@ function(){
 	</div>
 
 	<div class="msg_list">
-	<p class="msg_head"></p>
+	<p class="msg_head">Write a sequence of MIPS instructions that directly
+	correspond to this C code segment. Assume register $s0 contains the
+	integer variable x and register $s1 contains the integer variable m. Use
+	temporary registers if necessary. To alter the order of execution of
+	instructions in your MIPS code, do not use jump (j) instructions, but
+	only branch (beq and bne) instruction.</p>
 	<div class="msg_body">
 		<p>
+		<pre><code class="cblock">
+		      slti $t0, $s0, 15
+		      beq $t0, $zero, else
+		      add $s0, $s0, $s1
+		      beq $zero, $zero, exit
+		else: sub $s0, $s0, $s1
+		exit: addi $s0, $s0, 1
+		</code></pre>
 		</p>
 	</div>
 	</div>
