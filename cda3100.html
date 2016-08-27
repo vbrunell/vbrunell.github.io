@@ -98,9 +98,20 @@ function(){
 	</div>
 
 	<div class="msg_list">
-	<p class="msg_head"></p>
+	<p class="msg_head">
+	Assume a multicycle pipelined datapath has steps that take the amount of time specified below.
+	<br><br>&emsp;&emsp;IF - 305 ps
+	<br>&emsp;&emsp;ID - 275 ps
+	<br>&emsp;&emsp;EX - 280 ps
+	<br>&emsp;&emsp;MEM - 305 ps
+	<br>&emsp;&emsp;WB - 250 ps
+	<br><br>Given the times for the datapath stages listed above, what would the clock period be for the
+	entire datapath?
+	</p>
 	<div class="msg_body">
 		<p>
+		- The clock period is defined by the longest time: 305 ps in the IF stage.
+		- The clock rate is the inverse of the period: 1/(305*10<sup>-10</sup>) = 3.28 GHz.
 		</p>
 	</div>
 	</div>
