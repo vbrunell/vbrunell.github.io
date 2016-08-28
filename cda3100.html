@@ -106,9 +106,28 @@ function(){
 	</div>
 
 	<div class="msg_list">
-	<p class="msg_head"></p>
+		<p class="msg_head">
+		Convert 345<sub>8</sub> to decimal.
+		<br>Convert 123<sub>10</sub> to binary.
+		<br>Convert F1C4<sub>16</sub> to decimal.
+		<br>Convert ABCD<sub>16</sub> to binary.
+		</p>
 	<div class="msg_body">
 		<p>
+		345<sub>8</sub> = 3*8<sup>2</sup> + 4*8<sup>1</sup> + 5*8<sup>0</sup> = 229
+		<br>123<sub>10</sub>:
+		<br>123/2 = 61 R1
+		<br>61/2 = 30 R1
+		<br>30/2 = 15 R0
+		<br>15/2 = 7 R1
+		<br>7/2 = 3 R1
+		<br>3/2 = 1 R1
+		<br>1/2 = 0 R1
+		<br><br>Then place the remainder of each division step, starting at the top, into a binary digit, starting at the least significant position.  If we're using Little Endian, this would be:
+		<br>0111 1011<sub>2</sub> = 123<sub>10</sub>
+
+		<br>Convert F1C4<sub>16</sub> to decimal.
+		<br>Convert ABCD<sub>16</sub> to binary.
 		</p>
 	</div>
 	</div>
