@@ -107,15 +107,15 @@ function(){
 
 	<div class="msg_list">
 		<p class="msg_head">
-		1. Convert 345<sub>8</sub> to decimal.
-		<br>2. Convert 123<sub>10</sub> to binary.
-		<br>3. Convert F1C4<sub>16</sub> to decimal.
-		<br>4. Convert ABCD<sub>16</sub> to binary.
+		1. Convert 123<sub>10</sub> to binary.
+		<br>2. Convert 100111001101<sub>2</sub> to decimal.
+		<br>3. Convert 345<sub>8</sub> to decimal.
+		<br>4. Convert F1C4<sub>16</sub> to decimal.
+		<br>5. Convert ABCD<sub>16</sub> to binary.
 		</p>
 	<div class="msg_body">
 		<p>
-		1. 345<sub>8</sub> = 3*8<sup>2</sup> + 4*8<sup>1</sup> + 5*8<sup>0</sup> = 229
-		<br><br>2. 123<sub>10</sub> can be converted to binary by repeated division by two and noting the remainder at each step:
+		<br><br>1. 123<sub>10</sub> can be converted to binary by repeated division by two and noting the remainder at each step:
 		<br><br>&emsp;&emsp;123/2 = 61 R1
 		<br>&emsp;&emsp;61/2 = 30 R1
 		<br>&emsp;&emsp;30/2 = 15 R0
@@ -126,8 +126,19 @@ function(){
 		<br><br>Then place the remainder of each division step, starting at the top, into a binary digit, starting at the least significant position.  If we're using a Little Endian 8-bit representation and assuming byte addresses increase to the left, this would be:
 		<br><br>&emsp;&emsp;0111 1011<sub>2</sub> = 123<sub>10</sub>
 
-		<br><br>3. F1C4<sub>16</sub> = 15*16<sup>3</sup> + 1*16<sup>2</sup> + 12*16<sup>1</sup> + 4*16<sup>0</sup> = 61892<sub>10</sub>.
-		<br><br>4. To convert ABCD<sub>16</sub> to binary note that 4 bits are required to represent each hex digit:
+		<br><br>2. 2<sup>0</sup> = 1
+		<br>2<sup>2</sup> = 4
+		<br>2<sup>3</sup> = 8
+		<br>2<sup>6</sup> = 64
+		<br>2<sup>7</sup> = 128
+		<br>2<sup>8</sup> = 256
+		<br>2<sup>11</sup> = 2048
+		<br><br>100111001101<sub>2</sub> = 2509
+
+		<br><br>3. 345<sub>8</sub> = 3*8<sup>2</sup> + 4*8<sup>1</sup> + 5*8<sup>0</sup> = 229
+
+		<br><br>4. F1C4<sub>16</sub> = 15*16<sup>3</sup> + 1*16<sup>2</sup> + 12*16<sup>1</sup> + 4*16<sup>0</sup> = 61892<sub>10</sub>.
+		<br><br>5. To convert ABCD<sub>16</sub> to binary note that 4 bits are required to represent each hex digit:
 		<br><br>&emsp;&emsp;ABCD<sub>16</sub> = 1010 1011 1100 1101
 		</p>
 	</div>
@@ -251,33 +262,6 @@ function(){
 	<div class="msg_body">
 		<p>Central processor.<br>
 		The main Components: Control Unit and DataPath
-		</p>
-	</div>
-	</div>
-
-	<div class="msg_list">
-		<p class="msg_head">Transform 100111001101<sub>2</sub> into decimal.</p>
-	<div class="msg_body">
-		<p>
-		<br>2<sup>0</sup> = 1
-		<br>2<sup>2</sup> = 4
-		<br>2<sup>3</sup> = 8
-		<br>2<sup>6</sup> = 64
-		<br>2<sup>7</sup> = 128
-		<br>2<sup>8</sup> = 256
-		<br>2<sup>11</sup> = 2048
-		<br><br>100111001101<sub>2</sub> = 2509
-		</p>
-	</div>
-	</div>
-
-	<div class="msg_list">
-		<p class="msg_head">Transform 4625<sub>10</sub> into binary. </p>
-	<div class="msg_body">
-		<p>
-		4625 = 4096 + 512 + 16 + 1 = 2<sup>12</sup> + 2<sup>9</sup> + 2<sup>4</sup> + 2<sup>0</sup>
-		<br><br>4625<sub>10</sub> = 1 0010 0001 0001<sub>2</sub>
-		<br><br>You could also just divide by two a few times.
 		</p>
 	</div>
 	</div>
