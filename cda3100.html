@@ -121,13 +121,14 @@ function(){
 	<div class="msg_body">
 		<p>
 		<br>Basically, it simplifies the work the hardware has to do when handling operations involving signed integers.
-		<br>For an example of this, consider using a simple binary magnitude representation.
+		<br><br>For an example of this, consider using a simple binary magnitude representation.
 		<br>Then an operation like 4+(-2) in binary would yield:
 		<br>0100 + 1010 = 1110 = -6
 		<br>So the hardware would actually have to check for signed integers and handle them in a different way.
 		<br>However, not that using the two's complement version of -2 we get:
 		<br>0100 + 1110 = 0010 = 2
 		<br>which is what we expect for 4+(-2)
+		<br><br>Also, consider that extending an integer in binary to fill more bits is easier using two's complement, since we merely extend the sign bit to fill the new bit locations, whereas using 1's complement would have required that only the left-most bit match the sign bit.
 
 		<br>It is called “two’s complement” because to negate an integer, you subtract it from 2<sup>N</sup>.
 		<br>&emsp;&emsp;For example, to get -2 in 2's complement using 4 bits:
