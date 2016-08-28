@@ -179,7 +179,7 @@ function(){
 		</p>
 	<div class="msg_body">
 		<p>
-		<br><br>1. 123<sub>10</sub> can be converted to binary by repeated division by two and noting the remainder at each step:
+		1. 123<sub>10</sub> can be converted to binary by repeated division by two and noting the remainder at each step:
 		<br><br>&emsp;&emsp;123/2 = 61 R1
 		<br>&emsp;&emsp;61/2 = 30 R1
 		<br>&emsp;&emsp;30/2 = 15 R0
@@ -217,7 +217,7 @@ function(){
 		</p>
 	<div class="msg_body">
 		<p>
-		<br>1. Basically, it simplifies the work the hardware has to do when handling operations involving signed integers.
+		1. Basically, it simplifies the work the hardware has to do when handling operations involving signed integers.
 		<br><br>For an example of this, consider using a simple binary magnitude representation:
 		<br><br>Then an operation like 4+(-2) in binary would yield:
 		<br><br>&emsp;&emsp;0100 + 1010 = 1110 = -6
@@ -235,9 +235,11 @@ function(){
 	</div>
 
 	<div class="msg_list">
-	<p class="msg_head">1. Represent -3 using signed binary magnitude representation (8 bits)
+	<p class="msg_head">
+	1. Represent -3 using signed binary magnitude representation (8 bits)
 	<br>2. Represent -3 using 1’s complement binary number representation (8 bits)
-	<br>3. Represent -3 using 2’s complement binary number representation (8 bits)</p>
+	<br>3. Represent -3 using 2’s complement binary number representation (8 bits)
+	</p>
 	<div class="msg_body">
 		<p>
 		3 = 0000 0011
@@ -253,13 +255,15 @@ function(){
 	</div>
 
 	<div class="msg_list">
-	<p class="msg_head">Your system uses 2's complement binary representation.
+	<p class="msg_head">
+	Your system uses 2's complement binary representation.
 	<br>After the following two complement operations, what values will x and y hold?
 	<br><code>
 	<br>&emsp;&emsp;int x = 2;
 	<br>&emsp;&emsp;unsigned int y = 2;
 	<br>&emsp;&emsp;x = ~2;
-	<br>&emsp;&emsp;y = ~2;</code></p>
+	<br>&emsp;&emsp;y = ~2;</code>
+	</p>
 	<div class="msg_body">
 		<p>
 		<br>x = 2 = 0000 0010
@@ -296,10 +300,12 @@ function(){
 	</div>
 
 	<div class="msg_list">
-	<p class="msg_head">Consider an R-type MIPS assembly symbolic instruction (like
+	<p class="msg_head">
+	Consider an R-type MIPS assembly symbolic instruction (like
 	<code>add $rd, $rs, $rt</code>).<br>
 	<br>Show its machine instruction format using fields.
-	<br>Show field length using the range of bit position numbers.</p>
+	<br>Show field length using the range of bit position numbers.
+	</p>
 	<div class="msg_body">
 		<p><pre><code>
 		----------------------------------------------
@@ -312,8 +318,10 @@ function(){
 	</div>
 
 	<div class="msg_list">
-	<p class="msg_head">The 1-bit adder is a combinational logic block that has three inputs and two
-	outputs.  What are they?</p>
+	<p class="msg_head">
+	The 1-bit adder is a combinational logic block that has three inputs and two
+	outputs.  What are they?
+	</p>
 	<div class="msg_body">
 		<p>
 		The three inputs are: the first operand bit, the second operand bit,
@@ -323,7 +331,8 @@ function(){
 	</div>
 
 	<div class="msg_list">
-	<p class="msg_head">Write a sequence of MIPS instructions that directly
+	<p class="msg_head">
+	Write a sequence of MIPS instructions that directly
 	correspond to this C code segment. Assume register $s0 contains the
 	integer variable x and register $s1 contains the integer variable m. Use
 	temporary registers if necessary. To alter the order of execution of
@@ -352,9 +361,11 @@ function(){
 	</div>
 
 	<div class="msg_list">
-	<p class="msg_head">The size (or capacity) of a memory unit can be expressed in
+	<p class="msg_head">
+	The size (or capacity) of a memory unit can be expressed in
 	words, bytes, or bits. Express the size (capacity) of the MIPS Register File
-	in all three of them: words, bytes, and bits.</p>
+	in all three of them: words, bytes, and bits.
+	</p>
 	<div class="msg_body">
 		<p>
 		32 words,
@@ -365,9 +376,11 @@ function(){
 	</div>
 
 	<div class="msg_list">
-	<p class="msg_head">What are the names of the three main components of the MIPS
+	<p class="msg_head">
+	What are the names of the three main components of the MIPS
 	data path? (Note: data and instruction memory do not belong to the data
-	path.)</p>
+	path.)
+	</p>
 	<div class="msg_body">
 		<p>
 		Program Counter<br>
@@ -378,7 +391,9 @@ function(){
 	</div>
 
 	<div class="msg_list">
-	<p class="msg_head">What are the three classes of MIPS instructions?  Describe each.</p>
+	<p class="msg_head">
+	What are the three classes of MIPS instructions?  Describe each.
+	</p>
 	<div class="msg_body">
 		<p>
 		--ALU instructions--
@@ -402,8 +417,10 @@ function(){
 	</div>
 
 	<div class="msg_list">
-	<p class="msg_head">What is the basic difference between combinational and
-	sequential logic?</p>
+	<p class="msg_head">
+	What is the basic difference between combinational and
+	sequential logic?
+	</p>
 	<div class="msg_body">
 		<p>
 		The output of a combinational logic circuit depends solely on its inputs. It is
