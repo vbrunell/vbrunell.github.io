@@ -277,106 +277,6 @@ function(){
 
 	<div class="msg_list">
 	<p class="msg_head">
-	Assume a multicycle pipelined datapath has steps that take the amount of time specified below.
-	<br><br>&emsp;&emsp;IF - 305 ps
-	<br>&emsp;&emsp;ID - 275 ps
-	<br>&emsp;&emsp;EX - 280 ps
-	<br>&emsp;&emsp;MEM - 305 ps
-	<br>&emsp;&emsp;WB - 250 ps
-	<br><br>Given the times for the datapath stages listed above, what would the clock period be for the
-	entire datapath?
-
-	<br><br>In a pipelined datapath, assuming no hazards or stalls, how many seconds will it take to execute 1 instruction?
-	</p>
-	<div class="msg_body">
-		<p>
-		- The clock period is defined by the longest stage: 305 ps in the IF stage.<br><br>
-		- The clock rate is the inverse of the period: 1/(3.05*10<sup>-10</sup>) = 3.28 GHz.
-		<br><br>
-		1 instruction would need to proceed through all 5 stages of the pipeline:
-		<br>305 ps x 5 stages = 1,525 ps or 1.525 x 10<sup>-9</sup> s.
-		</p>
-	</div>
-	</div>
-
-	<div class="msg_list">
-	<p class="msg_head">
-	Consider an R-type MIPS assembly instruction (like
-	<code>add $rd, $rs, $rt</code>).<br>
-	<br>Show its machine instruction format using fields.
-	<br>Show field length using the range of bit position numbers.
-	</p>
-	<div class="msg_body">
-		<p><pre><code>
-		----------------------------------------------
-		|  op  |  rs  |  rt  |  rd  | shamnt | funct |
-		----------------------------------------------
-		  31-26  25-21  20-16  15-11   10-6     5-0
-		</code></pre>
-		</p>
-	</div>
-	</div>
-
-	<div class="msg_list">
-	<p class="msg_head">
-	The 1-bit adder is a combinational logic block that has three inputs and two
-	outputs.  What are they?
-	</p>
-	<div class="msg_body">
-		<p>
-		The three inputs are: the first operand bit, the second operand bit,
-		and the carry-in.
-		<br><br>The two outputs are: carry-out and sum.</p>
-	</div>
-	</div>
-
-	<div class="msg_list">
-	<p class="msg_head">
-	Write a sequence of MIPS instructions that directly
-	correspond to this C code segment. Assume register $s0 contains the
-	integer variable x and register $s1 contains the integer variable m. Use
-	temporary registers if necessary. To alter the order of execution of
-	instructions in your MIPS code, do not use jump (j) instructions, but
-	only branch (beq and bne) instruction.
-	<code>
-	<br><br>&emsp;&emsp;if (x &lt; 15)
-	<br>&emsp;&emsp;&emsp;&emsp;x = x + m;
-	<br>&emsp;&emsp;else
-	<br>&emsp;&emsp;&emsp;&emsp;x = x – m;
-	<br>&emsp;&emsp;x++;
-	</code>
-	</p>
-	<div class="msg_body">
-		<p>
-		<pre><code class="cblock">
-		      slti $t0, $s0, 15
-		      beq $t0, $zero, else
-		      add $s0, $s0, $s1
-		      beq $zero, $zero, exit
-		else: sub $s0, $s0, $s1
-		exit: addi $s0, $s0, 1
-		</code></pre>
-		</p>
-	</div>
-	</div>
-
-	<div class="msg_list">
-	<p class="msg_head">
-	The size (or capacity) of a memory unit can be expressed in
-	words, bytes, or bits. Express the size (capacity) of the MIPS Register File
-	in all three of them: words, bytes, and bits.
-	</p>
-	<div class="msg_body">
-		<p>
-		32 words,
-		128 bytes,
-		1024 bits.
-		</p>
-	</div>
-	</div>
-
-	<div class="msg_list">
-	<p class="msg_head">
 	What are the names of the three main components of the MIPS
 	data path? (Note: data and instruction memory do not belong to the data
 	path.)
@@ -418,6 +318,93 @@ function(){
 
 	<div class="msg_list">
 	<p class="msg_head">
+	Consider an R-type MIPS assembly instruction (like
+	<code>add $rd, $rs, $rt</code>).<br>
+	<br>Show its machine instruction format using fields.
+	<br>Show field length using the range of bit position numbers.
+	</p>
+	<div class="msg_body">
+		<p><pre><code>
+		----------------------------------------------
+		|  op  |  rs  |  rt  |  rd  | shamnt | funct |
+		----------------------------------------------
+		  31-26  25-21  20-16  15-11   10-6     5-0
+		</code></pre>
+		</p>
+	</div>
+	</div>
+
+	<div class="msg_list">
+	<p class="msg_head">
+	The size (or capacity) of a memory unit can be expressed in
+	words, bytes, or bits. Express the size (capacity) of the MIPS Register File
+	in all three of them: words, bytes, and bits.
+	</p>
+	<div class="msg_body">
+		<p>
+		32 words,
+		128 bytes,
+		1024 bits.
+		</p>
+	</div>
+	</div>
+
+	<div class="msg_list">
+	<p class="msg_head">
+	Assume a multicycle pipelined datapath has steps that take the amount of time specified below.
+	<br><br>&emsp;&emsp;IF - 305 ps
+	<br>&emsp;&emsp;ID - 275 ps
+	<br>&emsp;&emsp;EX - 280 ps
+	<br>&emsp;&emsp;MEM - 305 ps
+	<br>&emsp;&emsp;WB - 250 ps
+	<br><br>Given the times for the datapath stages listed above, what would the clock period be for the
+	entire datapath?
+
+	<br><br>In a pipelined datapath, assuming no hazards or stalls, how many seconds will it take to execute 1 instruction?
+	</p>
+	<div class="msg_body">
+		<p>
+		- The clock period is defined by the longest stage: 305 ps in the IF stage.<br><br>
+		- The clock rate is the inverse of the period: 1/(3.05*10<sup>-10</sup>) = 3.28 GHz.
+		<br><br>
+		1 instruction would need to proceed through all 5 stages of the pipeline:
+		<br>305 ps x 5 stages = 1,525 ps or 1.525 x 10<sup>-9</sup> s.
+		</p>
+	</div>
+	</div>
+
+	<div class="msg_list">
+	<p class="msg_head">
+	Write a sequence of MIPS instructions that directly
+	correspond to this C code segment. Assume register $s0 contains the
+	integer variable x and register $s1 contains the integer variable m. Use
+	temporary registers if necessary. To alter the order of execution of
+	instructions in your MIPS code, do not use jump (j) instructions, but
+	only branch (beq and bne) instruction.
+	<code>
+	<br><br>&emsp;&emsp;if (x &lt; 15)
+	<br>&emsp;&emsp;&emsp;&emsp;x = x + m;
+	<br>&emsp;&emsp;else
+	<br>&emsp;&emsp;&emsp;&emsp;x = x – m;
+	<br>&emsp;&emsp;x++;
+	</code>
+	</p>
+	<div class="msg_body">
+		<p>
+		<pre><code class="cblock">
+		      slti $t0, $s0, 15
+		      beq $t0, $zero, else
+		      add $s0, $s0, $s1
+		      beq $zero, $zero, exit
+		else: sub $s0, $s0, $s1
+		exit: addi $s0, $s0, 1
+		</code></pre>
+		</p>
+	</div>
+	</div>
+
+	<div class="msg_list">
+	<p class="msg_head">
 	What is the basic difference between combinational and
 	sequential logic?
 	</p>
@@ -428,6 +415,19 @@ function(){
 		The output of a sequential logic circuit depends on inputs and the current
 		state. It contains memory.
 		</p>
+	</div>
+	</div>
+
+	<div class="msg_list">
+	<p class="msg_head">
+	The 1-bit adder is a combinational logic block that has three inputs and two
+	outputs.  What are they?
+	</p>
+	<div class="msg_body">
+		<p>
+		The three inputs are: the first operand bit, the second operand bit,
+		and the carry-in.
+		<br><br>The two outputs are: carry-out and sum.</p>
 	</div>
 	</div>
 
