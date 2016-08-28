@@ -101,18 +101,34 @@ function(){
 	<div class="msg_list">
 	<p class="msg_head">
 	1. How is speedup defined?
-	<br>2. How is parallel speedup defined?
-	<br>3. If a machine takes 20 seconds to execute a program, and it is improved so that the same program only takes 5 seconds to execute, what is the speedup for that machine?
-	<br>4.
+	<br>2. If a machine takes 20 seconds to execute a program, and it is improved so that the same program only takes 5 seconds to execute, what is the speedup for that machine?
 	<br>
 	</p>
 	<div class="msg_body">
 		<p>
 		1. Speedup = T<sub>old</sub>/T<sub>new</sub>, where T represents the amount of time to execute some program.
-		2. Parallel Speedup = T<sub>1</sub>/T<sub>P</sub>, where P is the number of processors.
 		<br>So it's the amount of time it takes to execute a program using 1 processor divided by the time it would take using P processors.
-		3. 20/5 = 4 times faster
-		3.
+		2. 20/5 = 4 times faster
+		</p>
+	</div>
+	</div>
+
+	<div class="msg_list">
+	<p class="msg_head">
+	1. How is parallel speedup defined?
+	<br>2. What is Amdahl's Law?  How is it formulated?
+	<br>3. Can we always decrease the execution time of a program by adding more processors to the task?
+	<br>
+	</p>
+	<div class="msg_body">
+		<p>
+		1. Parallel Speedup = T<sub>1</sub>/T<sub>P</sub>, where P is the number of processors.
+		2. Amdahl's Law states that the maximum speedup attainable by improvement in the execution of a program is limited by the fraction of the program that doesn't benefit from the improvement.  In terms of improvement from parallelization, speedup is limited by the sequential component of the program.
+		<br><br>It is formulated as:
+		<br>&emsp;&emsp;Speedup = T<sub>old</sub>/T<sub>new</sub> = 1/((1-Fraction<sub>unimproved</sub>)+Fraction<sub>improved</sub>/Speedup<sub>improved</sub>)
+		<br>&emsp;&emsp;
+		<br>&emsp;&emsp;
+		<br>&emsp;&emsp;
 		</p>
 	</div>
 	</div>
