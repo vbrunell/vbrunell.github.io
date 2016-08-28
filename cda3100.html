@@ -91,9 +91,29 @@ function(){
 	-->
 
 	<div class="msg_list">
-	<p class="msg_head"></p>
+	<p class="msg_head">
+	1. How is execution time defined?
+	<br>2. If a program requires 10,000 instructions to execute, each instruction requires 2 cycles, and the clock rate is 2 GHz, what is the execution time?
+	<br>
+	</p>
 	<div class="msg_body">
 		<p>
+		1. Execution Time = instruction_count * CPI * clock period
+		2. 10,000 * 2 * (1/(2*10<sup>9</sup>)
+		<br>&emsp;&emsp;= 10,000 * 2 * 0.5/10<sup>9</sup> =
+		<br>&emsp;&emsp;= 10<sup>4</sup>/10<sup>9</sup>
+		<br>&emsp;&emsp;= 10<sup>-5</sup> seconds
+		<br>&emsp;&emsp;= 10 microseconds
+		</p>
+	</div>
+	</div>
+
+	<div class="msg_list">
+	<p class="msg_head">If the clock rate of a processor is 1.7GHz, what is its clock period?</p>
+	<div class="msg_body">
+		<p>
+		Clock rate and clock period are inverses of one another.  So we're converting cycles/seconds to seconds/cycle.
+		<br><br>1/(1.7*10<sup>9</sup>) = 588*10<sup>-12</sup> = 588 ps
 		</p>
 	</div>
 	</div>
