@@ -107,15 +107,15 @@ function(){
 
 	<div class="msg_list">
 		<p class="msg_head">
-		Convert 345<sub>8</sub> to decimal.
-		<br>Convert 123<sub>10</sub> to binary.
-		<br>Convert F1C4<sub>16</sub> to decimal.
-		<br>Convert ABCD<sub>16</sub> to binary.
+		1. Convert 345<sub>8</sub> to decimal.
+		<br>2. Convert 123<sub>10</sub> to binary.
+		<br>3. Convert F1C4<sub>16</sub> to decimal.
+		<br>4. Convert ABCD<sub>16</sub> to binary.
 		</p>
 	<div class="msg_body">
 		<p>
-		345<sub>8</sub> = 3*8<sup>2</sup> + 4*8<sup>1</sup> + 5*8<sup>0</sup> = 229
-		<br><br>123<sub>10</sub> can be converted to binary by repeated division by two and noting the remainder at each step:
+		1. 345<sub>8</sub> = 3*8<sup>2</sup> + 4*8<sup>1</sup> + 5*8<sup>0</sup> = 229
+		<br><br>2. 123<sub>10</sub> can be converted to binary by repeated division by two and noting the remainder at each step:
 		<br><br>&emsp;&emsp;123/2 = 61 R1
 		<br>&emsp;&emsp;61/2 = 30 R1
 		<br>&emsp;&emsp;30/2 = 15 R0
@@ -126,8 +126,8 @@ function(){
 		<br><br>Then place the remainder of each division step, starting at the top, into a binary digit, starting at the least significant position.  If we're using a Little Endian 8-bit representation and assuming byte addresses increase to the left, this would be:
 		<br><br>&emsp;&emsp;0111 1011<sub>2</sub> = 123<sub>10</sub>
 
-		<br><br>F1C4<sub>16</sub> = 15*16<sup>3</sup> + 1*16<sup>2</sup> + 12*16<sup>1</sup> + 4*16<sup>0</sup> = 61892<sub>10</sub>.
-		<br><br>To convert ABCD<sub>16</sub> to binary note that 4 bits are required to represent each hex digit:
+		<br><br>3. F1C4<sub>16</sub> = 15*16<sup>3</sup> + 1*16<sup>2</sup> + 12*16<sup>1</sup> + 4*16<sup>0</sup> = 61892<sub>10</sub>.
+		<br><br>4. To convert ABCD<sub>16</sub> to binary note that 4 bits are required to represent each hex digit:
 		<br><br>&emsp;&emsp;ABCD<sub>16</sub> = 1010 1011 1100 1101
 		</p>
 	</div>
