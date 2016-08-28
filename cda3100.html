@@ -222,7 +222,7 @@ function(){
 		<br><br>Then an operation like 4+(-2) in binary would yield:
 		<br><br>&emsp;&emsp;0100 + 1010 = 1110 = -6
 		<br><br>So the hardware would actually have to check for signed integers and handle them in a different way.
-		<br><br>However, not that using the two's complement version of -2 we get:
+		<br><br>However, using the two's complement version of -2 we get:
 		<br><br>&emsp;&emsp;0100 + 1110 = 0010 = 2
 		<br><br>which is what we expect for 4+(-2)
 		<br><br>Also, consider that extending an integer in binary to fill more bits is easier using two's complement, since we merely extend the sign bit to fill the new bit locations, whereas using binary magnitude representation would have required that only the left-most bit match the sign bit.
