@@ -126,7 +126,7 @@ function(){
 		<br><br>It is formulated as:
 		<br><br>&emsp;&emsp;Speedup = T<sub>old</sub>/T<sub>new</sub>
 		<br>&emsp;&emsp;T<sub>old</sub>/T<sub>new</sub> = 1/((1-Fraction<sub>unimproved</sub>) + (Fraction<sub>improved</sub>/Speedup<sub>improved</sub>))
-		<br><br>3. No.  In terms of improvement from parallelization, Amdahl's Law states that speedup is limited by the sequential component of the program. So if a program executes in 3 hours, and 1 hour is spent executing sequential code, whereas the other 2 are spent executing code that can be parallelized, then we can never reduce the execution time of the program below 1 hour.
+		<br><br>3. No.  In terms of improvement from parallelization, Amdahl's Law states that speedup is limited by the sequential component of the program. So if a program executes in 3 hours, and 1 hour is spent executing sequential code, whereas the other 2 are spent executing code that can be parallelized, then we can't reduce the execution time of the program below 1 hour by adding more processors to the task.
 		<br>&emsp;&emsp;
 		<br>&emsp;&emsp;
 		</p>
