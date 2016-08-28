@@ -122,11 +122,11 @@ function(){
 	<div class="msg_body">
 		<p>
 		1. Parallel Speedup = T<sub>1</sub>/T<sub>P</sub>, where P is the number of processors.
-		<br><br>2. Amdahl's Law states that the maximum speedup attainable by improvement in the execution of a program is limited by the fraction of the program that doesn't benefit from the improvement.  In terms of improvement from parallelization, speedup is limited by the sequential component of the program.
+		<br><br>2. Amdahl's Law states that the maximum speedup attainable by improvement in the execution of a program is limited by the fraction of the program that doesn't benefit from the improvement.
 		<br><br>It is formulated as:
 		<br><br>&emsp;&emsp;Speedup = T<sub>old</sub>/T<sub>new</sub>
 		<br>&emsp;&emsp;T<sub>old</sub>/T<sub>new</sub> = 1/((1-Fraction<sub>unimproved</sub>) + (Fraction<sub>improved</sub>/Speedup<sub>improved</sub>))
-		<br>&emsp;&emsp;
+		<br><br>3. No.  In terms of improvement from parallelization, Amdahl's Law states that speedup is limited by the sequential component of the program. So if a program executes in 3 hours, and 1 hour is spent executing sequential code, whereas the other 2 are spent executing code that can be parallelized, then we can never reduce the execution time of the program below 1 hour.
 		<br>&emsp;&emsp;
 		<br>&emsp;&emsp;
 		</p>
