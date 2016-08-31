@@ -88,3 +88,10 @@ code {
 	color: blue;
 	font-size: 1.2em;
 }
+
+p.maths {
+	padding-left: 15px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
