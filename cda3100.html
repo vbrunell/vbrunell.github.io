@@ -382,9 +382,32 @@ Hamming Codes
 	</div>
 
 	<div class="msg_list">
-	<p class="msg_head"></p>
+	<p class="msg_head">
+	Convert the following single precision floating point number represented by the hexadecimal number 0xC0EB0000 to it's equivalent decimal number.
+	</p>
 	<div class="msg_body">
 		<p>
+		<br>First, convert 0xC0EB0000 to binary:
+		<br>1100 0000 1110 1011 0000 0000 0000 0000
+
+		<br><br>We know that the IEEE floating point representation uses 1 bit to indicate sign, 8 bits for the exponent, and 23 bits for the mantissa:
+
+		<br><br>1 10000001 11010110000000000000000
+
+		<br><br>We convert this to decimal by interpreting each field:
+
+		<br><br>The sign is negative since the sign field is 1.
+		<br>The exponent for the binary scientific notation is 2.  Remember, the exponent field is offset by 127 to accomodate negative values.  Since 10000001 = 129 and 129 - 127 = 2, the exponent will be 2.
+		<br>We append the mantissa to 1, which is implied in the notation.
+
+		<br><br>Then the final result is:
+
+		<br><br>-1.1101011 * 2<sup>2</sup>
+		<br>= -(2<sup>0</sup>+2<sup>-1</sup>+2<sup>-2</sup>+2<sup>-4</sup>+2<sup>-6</sup>+2<sup>-7</sup>)*2<sup>2</sup>
+		<br>= -(2<sup>2</sup>+2<sup>1</sup>+2<sup>0</sup>+2<sup>-2</sup>+2<sup>-4</sup>+2<sup>-5</sup>)
+		<br>= -(7+0.34375)
+		<br>= -7.34375
+
 		</p>
 	</div>
 	</div>
