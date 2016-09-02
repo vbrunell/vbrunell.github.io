@@ -395,16 +395,6 @@ Hamming Codes
 		---------------------------------------------------
 		  1 bit      8 bits              23 bits
 		</code></pre>
-
-
-		<br><br>The offset of the exponent field is +127.  This is to allow for the representation of negative exponents.
-
-		<br><br>For example, if the exponent field contains 100001010, then the exponent is actually:
-
-		<br><br>10001010<sub>2</sub> = 137<sub>10</sub>
-		<br>137 - 127 = 10
-
-		<br><br>So we would have <i>sign * 2<sup>10</sup> * mantissa</i>.
 		</p>
 	</div>
 	</div>
@@ -426,7 +416,14 @@ Hamming Codes
 	</p>
 	<div class="msg_body">
 		<p>
+		<br><br>The offset of the exponent field is +127.  This is to allow for the representation of negative exponents.
 
+		<br><br>For example, if the exponent field contains 100001010, then the exponent is actually:
+
+		<br><br>10001010<sub>2</sub> = 137<sub>10</sub>
+		<br>137 - 127 = 10
+
+		<br><br>So we would have <i>sign * 2<sup>10</sup> * mantissa</i>.
 		</p>
 	</div>
 	</div>
