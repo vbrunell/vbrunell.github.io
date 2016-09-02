@@ -466,42 +466,37 @@ Hamming Codes
 
 	<div class="msg_list">
 	<p class="msg_head">
-	Convert to 8.625<sub>10</sub> to single precision IEEE-754 floating point number representation.
+	Convert to -8.625<sub>10</sub> to single precision IEEE-754 floating point number representation.
 	</p>
 	<div class="msg_body">
 		<p>
 		<br>First, convert 8.625 to binary:
 
-		&emsp;&emsp;<br> 8 = 1000
-		&emsp;&emsp;<br> Convert .625:
-		&emsp;&emsp;&emsp;&emsp;<br> .625 * 2 = 1.25
-		&emsp;&emsp;&emsp;&emsp;<br> .25 * 2 = 0.50
-		&emsp;&emsp;&emsp;&emsp;<br> 0.50 * 2 = 1.0
+		<br> &emsp;&emsp;8 = 1000
+		<br> &emsp;&emsp;Convert 0.625:
+		<br> &emsp;&emsp;&emsp;&emsp;0.625 * 2 = 1.25
+		<br> &emsp;&emsp;&emsp;&emsp;0.25 * 2 = 0.50
+		<br> &emsp;&emsp;&emsp;&emsp;0.50 * 2 = 1.0
+		<br> &emsp;&emsp;&emsp;&emsp;The whole number part of each result gives us the binary number: 0.101 = 0.625
+		<br> &emsp;&emsp;&emsp;&emsp;
+		<br> &emsp;&emsp;&emsp;&emsp;Then 8.625 in binary is:
+		<br> &emsp;&emsp;&emsp;&emsp;1000.101
 
-		&emsp;&emsp;<br><br>1100 0000 1110 1011 0000 0000 0000 0000
+		<br>Convert this number into the mantissa and exponent:
+		<br><br>&emsp;&emsp;1000.101 = 1.000101 * 2<sup>3</sup>
 
-		<br><br>We know that the IEEE floating point representation uses 1 bit to indicate sign, 8 bits for the exponent, and 23 bits for the mantissa:
+		<br>The mantissa is 23 bits long, so we add 17 0's onto the end of the decimal part of 1.000101:
+		<br><br>&emsp;&emsp;mantissa = 00010100000000000000000
 
-		&emsp;&emsp;<br><br>1 10000001 11010110000000000000000
+		<br><br>The exponent is 8 bits long and is offset by +127.
+		So we must add 127 to 3 and that's the number we'll put in the exponent field:
+		<br><br>&emsp;&emsp; 130 = 10000010
 
-		<br><br>We convert this to decimal by interpreting each field:
+		<br><br>We set the sign bit to 1, since the number is negative.
 
-		<br>
-		<ul>
-			<li>The sign is negative since the sign field is 1.</li>
-			<li>The exponent for the binary scientific notation is 2.</li>
-			<li>Remember, the exponent field is offset by 127 to accomodate negative values.  Since 10000001 = 129 and 129 - 127 = 2, the exponent will be 2.
-				<li>We append the mantissa to 1, which is implied in the notation.</li>
-		</ul>
+		<br><br>So, our final result is:
 
-		<br>Then the final result is:
-
-		&emsp;&emsp;<br><br>-1.1101011 * 2<sup>2</sup>
-		&emsp;&emsp;<br>= -(2<sup>0</sup>+2<sup>-1</sup>+2<sup>-2</sup>+2<sup>-4</sup>+2<sup>-6</sup>+2<sup>-7</sup>)*2<sup>2</sup>
-		&emsp;&emsp;<br>= -(2<sup>2</sup>+2<sup>1</sup>+2<sup>0</sup>+2<sup>-2</sup>+2<sup>-4</sup>+2<sup>-5</sup>)
-		&emsp;&emsp;<br>= -(7+0.34375)
-		&emsp;&emsp;<br>= -7.34375
-
+		<br><br>&emsp;&emsp;1 10000010 00010100000000000000000
 		</p>
 	</div>
 	</div>
