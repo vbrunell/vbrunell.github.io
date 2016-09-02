@@ -428,9 +428,13 @@ Hamming Codes
 
 		<br><br>We convert this to decimal by interpreting each field:
 
-		<br><br>The sign is negative since the sign field is 1.
-		<br>The exponent for the binary scientific notation is 2.  Remember, the exponent field is offset by 127 to accomodate negative values.  Since 10000001 = 129 and 129 - 127 = 2, the exponent will be 2.
-		<br>We append the mantissa to 1, which is implied in the notation.
+		<br>
+		<ul>
+			<li>The sign is negative since the sign field is 1.</li>
+			<li>The exponent for the binary scientific notation is 2.</li>
+			<li>Remember, the exponent field is offset by 127 to accomodate negative values.  Since 10000001 = 129 and 129 - 127 = 2, the exponent will be 2.
+				<li>We append the mantissa to 1, which is implied in the notation.</li>
+		</ul>
 
 		<br><br>Then the final result is:
 
