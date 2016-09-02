@@ -385,9 +385,7 @@ Hamming Codes
 
 	<div class="msg_list">
 	<p class="msg_head">
-	For single precision IEEE-754 floating point numbers, what do the bit fields represent and how many bits compose each?
-	<br><br>How is the value of a IEEE-754 floating point number computed?
-	<br><br>What is the exponent offset by and why?
+	For single precision IEEE-754 floating point numbers, what do the bit fields represent and how many bits compose each field?
 	</p>
 	<div class="msg_body">
 		<p>
@@ -398,7 +396,6 @@ Hamming Codes
 		  1 bit      8 bits              23 bits
 		</code></pre>
 
-		<br><br>Computed as: sign * 2<sup>exponent</sup> * mantissa
 
 		<br><br>The offset of the exponent field is +127.  This is to allow for the representation of negative exponents.
 
@@ -408,6 +405,28 @@ Hamming Codes
 		<br>137 - 127 = 10
 
 		<br><br>So we would have <i>sign * 2<sup>10</sup> * mantissa</i>.
+		</p>
+	</div>
+	</div>
+
+	<div class="msg_list">
+	<p class="msg_head">
+	How is the value of a IEEE-754 floating point number computed?
+	</p>
+	<div class="msg_body">
+		<p>
+		Computed as: sign * 2<sup>exponent</sup> * mantissa
+		</p>
+	</div>
+	</div>
+
+	<div class="msg_list">
+	<p class="msg_head">
+	What is the exponent offset by and why?
+	</p>
+	<div class="msg_body">
+		<p>
+
 		</p>
 	</div>
 	</div>
