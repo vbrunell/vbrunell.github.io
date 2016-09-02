@@ -597,9 +597,9 @@ Hamming Codes
 
 	<div class="msg_list">
 	<p class="msg_head">
-	Consider an R-type MIPS assembly instruction (like
-	<code>add $rd, $rs, $rt</code>).<br>
-	<br>Show its machine instruction format by indicating the names of the fields used in the instruction and their bit positions.
+	What do the fields in an R-type MIPS assembly instruction (like
+	<code>add $rd, $rs, $rt</code>) represent?
+	<br>How many bits compose each field?<br>
 	</p>
 	<div class="msg_body">
 		<p><pre><code>
@@ -608,6 +608,37 @@ Hamming Codes
 		----------------------------------------------
 		  31-26  25-21  20-16  15-11   10-6     5-0
 		</code></pre>
+		</p>
+	</div>
+	</div>
+
+	<div class="msg_list">
+	<p class="msg_head">
+	Convert the R-type instruction <code>add $5, $6, $7</code>) to its binary machine instruction format.
+	</p>
+	<div class="msg_body">
+		<p><pre><code>
+		----------------------------------------------
+		|  op  |  rs  |  rt  |  rd  | shamnt | funct |
+		----------------------------------------------
+		  31-26  25-21  20-16  15-11   10-6     5-0
+		</code></pre>
+		<br>
+		<br>The opcode for an ALU operation is 0 in 6 bits: 000000
+		<br>
+		<br>The three operand fields will be filled by:
+		<br>
+		<br>rs: 6 = 00110
+		<br>rt: 7 = 00111
+		<br>rd: 5 = 00101
+		<br>
+		<br>The shift amount is 0 in 5 bits: 00000
+		<br>
+		<br>The funct field for an add is 32: 100000
+		<br>
+		<br>So altogether the instruction in MIPS binary is:
+		<br>
+		<br>000000 00110 00111 00101 00000 100000
 		</p>
 	</div>
 	</div>
