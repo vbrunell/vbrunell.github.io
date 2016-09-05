@@ -41,7 +41,7 @@ nav li a {
 
 nav li a:hover {
 	color: white;
-    background-color: #339966;
+    background-color: blue;
 }
 
 a.notnav:hover {
