@@ -814,16 +814,22 @@ function(){
 	<div class="msg_list">
 	<p class="msg_head">
 	Convert the following circuit diagram to the Boolean expression it represents.
-	<br>Simplify that Boolean expression.
 	<br>
 	<br>&emsp;&emsp;<img src="images/logic-circuit.gif">
 	</p>
 	<div class="msg_body">
 		<p>
-		The three inputs are: the first operand bit, the second operand bit,
-		and the carry-in.
+		<br>Start at the leftmost input and combine them as you read the circuit from left to right.
 		<br>
-		<br>The two outputs are: carry-out and sum.
+		<br>We first have an input of B which enters a NOT gate, giving us: ~B
+		<br>
+		<br>We then OR this with A, giving us: A + ~B
+		<br>
+		<br>Next we have B and C at the bottom of the circuit.  They both enter an OR gate giving us: C + B
+		<br>
+		<br>Finally, the inputs from the two OR gates enter an AND gate, giving us the expression that represents the circuit:
+		<br>
+		<br>(A + ~B)(C + B)
 		</p>
 	</div>
 	</div>
