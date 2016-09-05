@@ -19,7 +19,7 @@ h1.header {
 }
 
 p.quotes {
-	color: #006600;
+	color: blue;
 }
 
 p.contact {
@@ -94,5 +94,3 @@ p.maths {
 	padding-top: 10px;
 	padding-bottom: 5px;
 }
-
-
