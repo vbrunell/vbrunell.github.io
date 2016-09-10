@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<link rel="stylesheet" type="text/css" href="stylesheets/style1.css">
+
+<title>Victor's CS Site - CDA3100</title>
+<meta charset="utf-8">
+<meta name="description" content="Computer Science Website">
+<meta name="keywords" content="Computer Science, Computer Organization, Example, Practice, Binary, MIPS, Conversion">
+<meta name="author" content="Victor Brunell">
+
+<!--[if lt IE 9]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js">
+</script>
+<![endif]-->
+
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script type="text/javascript">
+$(document).ready(
+function(){
+
+	//hide the all of the element with class msg_body
+	$(".msg_body").hide();
+
+  	//toggle the componenet with class msg_body
+  	$(".msg_head").click(
+	function(){ $(this).next(".msg_body").slideToggle(600); }
+	);
+});
+</script>
+
+</head>
+
+<body>
+
+<header>
+  <h1 class="header">Victor's CS Site [ Machine Learning ]</h1>
+</header>
+
+<nav>
+<ul>
+  <li><a class="active" href="about.html">About</a></li>
+  <li><a class="active" href="links.html">Links</a></li>
+  <li class="dropdown">
+    <a href="#" class="dropbtn">Students</a>
+    <div class="dropdown-content">
+      <a href="cop3014.html">Programming I (COP3014)</a>
+      <a href="cda3100.html">Computer Organization I (CDA3100)</a>
+    </div>
+  </li>
+  <li><a class="active" href="contact.html">Contact</a></li>
+</ul>
+</nav>
+
+<article>
+
+<section>
+
+<h2>Machine Learning</h2>
+
+<div class="msg_list">
+<p class="msg_head">RISC/MIPS</p>
+<div class="msg_body">
+	<p>
+	The idea of a learning machine may appear paradoxical to some readers. How can the rules of operation of the machine change? They should describe completely how the machine will react whatever its history might be, whatever changes it might undergo. The rules are thus quite time-invariant. This is quite true. The explanation of the paradox is that the rules which get changed in the learning process are of a rather less pretentious kind, claiming only an ephemeral validity. The reader may draw a parallel with the Constitution of the United States.
+	</p>
+</div>
+</div>
+
+<div class="msg_list">
+
+</section>
+
+</article>
+
+<footer>
+  <p class="quotes">
+  <script src="javascripts/quotes.js" language="JavaScript"></script>
+  </p>
+</footer>
+
+</body>
+</html>
+
