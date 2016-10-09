@@ -1,23 +1,25 @@
+# Courtesy of Dr. Gaitros
+# FSU Computer Science Department
 # Sample Add two numbers together
-# Sample Call to function. 
+# Sample Call to function.
 
 
 
         .data
-msg1:  	.asciiz " \n" 
+msg1:  	.asciiz " \n"
 
         	.text
         	.globl main
 # ***********************************************************************
-# So I want to save $s0-$s7  and 
-# Floating Point registers $f20 - $f31 just to be save. Overkill...yes  
-# but hey...that's my middle name.  Actually my middle name is Alan.  
-# So how much space? 
+# So I want to save $s0-$s7  and
+# Floating Point registers $f20 - $f31 just to be save. Overkill...yes
+# but hey...that's my middle name.  Actually my middle name is Alan.
+# So how much space?
 # 8 words for the $s0-$s7 registers
-# 12 words for the $f20-$f21 
-# One word for $ra 
-#    21 words or at least 84 bytes. 
-# We pass the floating point argument in $f12 and return it in $f0. 
+# 12 words for the $f20-$f21
+# One word for $ra
+#    21 words or at least 84 bytes.
+# We pass the floating point argument in $f12 and return it in $f0.
 # ************************************************************************
 
 main:
@@ -67,23 +69,23 @@ main:
 		l.s	$f30,76($sp)
 		l.s	$f31,80($sp)
 		lw	$ra,84($sp)
-		mov.s	$f12,$f0		# The results are sent back 
-		li	$v0,2			# thru $f0 and print it out. 
+		mov.s	$f12,$f0		# The results are sent back
+		li	$v0,2			# thru $f0 and print it out.
 		syscall
-		jr	$ra	
+		jr	$ra
 
-		
+
 SQRT:
 		mov.s	$f1,$f12		# $f1 is UpperBound
-		mov.s	$f5,$f1			# Make $f5 the Number 
+		mov.s	$f5,$f1			# Make $f5 the Number
 		li.s	$f2,0.0			# $f2 is temp
 		li.s	$f3,0.0			# $f3 is LowerBound
 		li	$t2,50			# $t2 is Count
 		li.s	$f4,2.0			# $f4 will hold the number 2.0
 
-loop:		beq	$t2,$zero,done		# When Count is 0 your are done. 
+loop:		beq	$t2,$zero,done		# When Count is 0 your are done.
  		add.s	$f2,$f1,$f3		# temp=UpperBound+LowerBound
-		div.s	$f2,$f2,$f4		# temp=temp/2.0 
+		div.s	$f2,$f2,$f4		# temp=temp/2.0
 		mul.s	$f6,$f2,$f2		# get temp*temp
 		c.eq.s	$f6,$f5			# is temp*temp=num
 		bc1t	done			# If equal we are done
@@ -93,7 +95,7 @@ loop:		beq	$t2,$zero,done		# When Count is 0 your are done.
 		b	coutm
 uegt:		mov.s	$f1,$f2
 coutm:		addi	$t2,$t2,-1
-		b	loop 
-done: 	
+		b	loop
+done:
 		mov.s	$f0,$f2
-		jr	$ra			# Go back from whence we came. 
+		jr	$ra			# Go back from whence we came.
