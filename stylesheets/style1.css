@@ -5,7 +5,7 @@ body
 header, nav, article, footer, div.boxed
 {border:1px solid grey; margin:5px; padding:4px;}
 
-header, nav, article, footer, div.about
+div.about
 {border:1px solid grey; margin:5px; padding:4px; width:50%;}
 
 nav ul {
