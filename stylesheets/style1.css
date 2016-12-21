@@ -5,6 +5,9 @@ body
 header, nav, article, footer, div.boxed
 {border:1px solid grey; margin:5px; padding:4px;}
 
+div.about
+{border:1px solid grey; margin:5px; padding:4px; width:50%;}
+
 nav ul {
 	font-family: Verdana, sans-serif;
     list-style-type: none;
