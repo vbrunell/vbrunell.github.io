@@ -5,8 +5,8 @@ body
 header, nav, article, footer, div.boxed
 {border:1px solid grey; margin:5px; padding:4px;}
 
-div.about
-{border:1px solid grey; margin:5px; padding:4px; width:50%;}
+/*div.about
+{border:1px solid grey; margin:5px; padding:4px; width:50%;}*/
 
 #wrap {
    width:800px; 
