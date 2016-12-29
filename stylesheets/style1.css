@@ -8,8 +8,10 @@ header, nav, article, footer, div.boxed
 div.about
 {border:1px solid grey; margin:5px; padding:4px; width:50%;}
 
-div.wrap
-{width: 800px; margin: 0 auto;}
+.wrap {
+   width:800px; 
+   margin:0px auto;
+}
 
 nav ul {
 	font-family: Verdana, sans-serif;
