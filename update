@@ -1,4 +1,4 @@
-#!/usr/bin/bash
+#!/bin/bash
 
-git commit -a -m "foobar"
+git commit -a -m "update"
 git push origin master
