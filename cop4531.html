@@ -183,6 +183,26 @@ function(){
 
 	<div class="msg_list">
 	<p class="msg_head">
+	Prove that $n^2+5n+23 \notin O(n)$.
+	</p>
+	   <div class="msg_body">
+      <p>
+		Assume that $n^2+5n+23 \in O(n)$.  Then:
+
+		$$0 \le n^2+5n+23 \le cn$$
+		$$0 \le n^2 \le cn$$
+		$$0 \le n \le c$$
+
+		We are only concerned with asymptotic behavior, so we drop the lower order terms.
+		<br>
+		<br>Then we can clearly see that there is no $c$ that satisfies $n \le c$.
+      <br>Hence, $n^2+5n+23 \in O(n)$. QED
+	   </p>
+	</div>
+	</div>
+
+	<div class="msg_list">
+	<p class="msg_head">
 	Disprove $f \in O(g) \rightarrow f \in \Theta(g)$.
 	</p>
 	   <div class="msg_body">
