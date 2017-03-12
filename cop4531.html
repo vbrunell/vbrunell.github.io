@@ -143,17 +143,16 @@ function(){
 	<br>&nbsp;&nbsp;for (j = 0; j &le; i; j++)
 	<br>&nbsp;&nbsp;&nbsp;&nbsp;sum++;
 	</p>
-	<div class="msg_body">
-		<p>
-	<pre>
-	int Fibonacci(int number)
-	{
-  		if (number <= 1) return number;
+	   <div class="msg_body">
+      <p>
+      <pre>
+	   for (i = 1; i &le; n*n; i++)  // Executed n*n times
+	      for (j = 0; j &le; i; j++)  // Executed n*n times
+	         sum++;                    // Constant
 
-		return Fibonacci(number - 2) + Fibonacci(number - 1);
-	}
-	</pre>
-		</p>
+      Running time: O(n*n*n*n) = O(n<sup>4</sup>)
+      </pre>
+	   </p>
 	</div>
 	</div>
 
