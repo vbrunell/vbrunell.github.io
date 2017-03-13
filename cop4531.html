@@ -284,14 +284,14 @@ function(){
    </p>
 	<div class="msg_body">
 		<p>
-      We guess that $T(n) = O(nlogn)$ since it is in the form of a divide-and-conquer recurrence.
-      We must show that $T(n) \le cnlogn$ for some $c\gt0$.  We substitute and solve:
+      We guess that $T(n) = O(nlog(n))$ since it is in the form of a divide-and-conquer recurrence.
+      We must show that $T(n) \le cnlog(n)$ for some $c\gt0$.  We substitute and solve:
       $$T(n) \le 2T(n/2)+n$$
       $$T(n) \le 2T((cn/2)(log(n/2))+n$$
       $$T(n) \le cnlog(n/2)+n$$
-      $$T(n) \le cnlog(n)-cnlog2+n$$
+      $$T(n) \le cnlog(n)-cnlog(2)+n$$
       $$T(n) \le cnlog(n)-cn+n$$
-      <br><br>$cnlogn$ is the dominating term asymptotically, $\therefore T(n) \le cnlogn$, as long as $c\ge1$.
+      <br><br>$cnlogn$ is the dominating term asymptotically, $\therefore T(n) \le cnlog(n)$, as long as $c\ge1$.
 		</p>
 	</div>
 	</div>
