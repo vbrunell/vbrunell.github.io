@@ -277,12 +277,17 @@ function(){
 	   <div class="msg_body">
       <p>
       <pre>
-	   for (i = 1; i &le; n*n; i++)   // Executed n*n times
-	      for (j = 0; j &le; i; j++)  // Executed n*n times
-	         sum++;                   // Constant
-
-      Running time: O(n*n*n*n*1) = O(n<sup>4</sup>)
+		def power_of_2(a):
+    		x = 0				//constant
+    		while a > 1:  	//runs log(n) times
+        		a = a/2		//constant
+        		x = x+1		//constant
+    	return x				//constant
       </pre>
+		<br>Given that the number passed is divided in half at each iteration of the loop, the loop will only run
+		log(a) times.
+		<br>
+		<br>Hence, the runtime is O(log(n)).
 	   </p>
 	</div>
 	</div>
