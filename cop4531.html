@@ -78,6 +78,7 @@ function(){
 <p class="msg_head">Algorithms and Data Structures</p>
 <div class="msg_body">
 <a class="notnav" href="https://xlinux.nist.gov/dads/">Dictionary of Algorithms and Data Structures</a>
+<br><a class="notnav" href="https://www.cs.cmu.edu/~adamchik/15-121/lectures/Algorithmic%20Complexity/complexity.html">Algorithmic Complexity Tutorial</a>
 <br><a class="notnav" href="https://cathyatseneca.gitbooks.io/data-structures-and-algorithms/content/analysis/">Algorithms and Data Structures E-book</a>
 <br><a class="notnav" href="http://www-users.cs.umn.edu/~gini/4511/search">Notes on Search</a>
 <br><a class="notnav" href="https://www.cs.cmu.edu/~adamchik/15-121/lectures/Sorting%20Algorithms/sorting.html">Notes on Sorting</a>
@@ -243,6 +244,27 @@ function(){
 
 	<div class="msg_list">
 	<p class="msg_head">What is the runtime for the following code:
+   <br>
+	<br>for (i = 1; i &le; n*n; i++)
+	<br>&nbsp;&nbsp;for (j = 0; j &le; i; j++)
+	<br>&nbsp;&nbsp;&nbsp;&nbsp;sum++;
+	</p>
+	   <div class="msg_body">
+      <p>
+      <pre>
+	   for (i = 1; i &le; n*n; i++)   // Executed n*n times
+	      for (j = 0; j &le; i; j++)  // Executed n*n times
+	         sum++;                   // Constant
+
+      Running time: O(n*n*n*n*1) = O(n<sup>4</sup>)
+      </pre>
+	   </p>
+	</div>
+	</div>
+
+	<div class="msg_list">
+	<p class="msg_head">What is the runtime for the following code:
+   <br>
 	<br>for (i = 1; i &le; n*n; i++)
 	<br>&nbsp;&nbsp;for (j = 0; j &le; i; j++)
 	<br>&nbsp;&nbsp;&nbsp;&nbsp;sum++;
