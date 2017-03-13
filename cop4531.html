@@ -247,18 +247,22 @@ function(){
 	<div class="msg_list">
 	<p class="msg_head">What is the runtime for the following code:
    <br>
+	<code>
 	<br>for (i = 1; i &le; n*n; i++)
 	<br>&nbsp;&nbsp;for (j = 0; j &le; i; j++)
 	<br>&nbsp;&nbsp;&nbsp;&nbsp;sum++;
+	</code>
 	</p>
 	   <div class="msg_body">
       <p>
       <pre>
+		<code>
 	   for (i = 1; i &le; n*n; i++)   // Executed n*n times
 	      for (j = 0; j &le; i; j++)  // Executed n*n times
 	         sum++;                   // Constant
 
       Running time: O(n*n*n*n*1) = O(n<sup>4</sup>)
+		</code>
       </pre>
 	   </p>
 	</div>
@@ -267,12 +271,14 @@ function(){
 	<div class="msg_list">
 	<p class="msg_head">What is the runtime for the following code:
    <br>
+	<code>
 	 <br>def power_of_2(a):
     <br>&nbsp;&nbsp;x = 0
     <br>&nbsp;&nbsp;while a $\gt$ 1:
     <br>&nbsp;&nbsp;&nbsp;&nbsp;a = a/2
     <br>&nbsp;&nbsp;&nbsp;&nbsp;x = x+1
     <br>&nbsp;&nbsp;return x
+	</code>
 	</p>
 	   <div class="msg_body">
       <p>
