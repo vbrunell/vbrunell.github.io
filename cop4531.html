@@ -427,20 +427,39 @@ function(){
 
 	<div class="msg_list">
       <p class="msg_head">Define dynamic programming.
-      <br>How can you tell an algorithm is a good candidate for dynamic programming?
-      <br><br>What is the difference between top-down(Memoization) and bottom-up(Dynamic programming)
-      approaches to solving a problem?
-      <br><br>What is the difference between dynamic programming and divide-and-conquer?</p>
 	<div class="msg_body">
       <p>
       The idea is very simple, if you have solved a problem with the given input,
       then save the result for future reference, and avoid solving the same problem again.
-      <br>
-      <br> If the given problem can be broken up in to smaller sub-problems and these smaller subproblems are in
-      turn divided in to still-smaller ones, and in this process, if you observe some over-lappping subproblems,
-      then its a good candidate for dynamic programming.
-      <br>
-      <br><b>Top-Down:</b> Start solving the given problem by breaking it down.
+      </p>
+	</div>
+	</div>
+
+	<div class="msg_list">
+	<p class="msg_head">
+      How can you tell an algorithm is a good candidate for dynamic programming?
+      <br><br>What is the difference between dynamic programming and divide-and-conquer?</p>
+   </p>
+	<div class="msg_body">
+		<p>
+      If the given problem can be broken up in to smaller sub-problems and these smaller subproblems are in
+      turn divided in to still-smaller ones, and in this process, if you observe some <b>overlappping</b>
+      subproblems, then its a good candidate for dynamic programming.
+
+      <br>In divide-and-conquer algorithms we divide the problem in to <b>non-overlapping</b> subproblems and
+      solve them independently, like in mergesort and quick sort.
+		</p>
+	</div>
+	</div>
+
+	<div class="msg_list">
+	<p class="msg_head">
+      What is the difference between top-down(Memoization) and bottom-up(Dynamic programming)
+      approaches to solving a problem?
+   </p>
+	<div class="msg_body">
+		<p>
+      <b>Top-Down:</b> Start solving the given problem by breaking it down.
       If you see that the problem has been solved already, then just return the saved answer.
       If it has not been solved, solve it and save the answer.
       This is usually easy to think of and very intuitive. This is referred to as <b>Memoization</b>.
@@ -449,10 +468,7 @@ function(){
       start solving from the trivial subproblem, up towards the given problem.
       In this process, it is guaranteed that the subproblems are solved before solving the problem.
       This is referred to as Dynamic Programming.
-      <br>
-      <br>In divide-and-conquer algorithms we divide the problem in to <em>non-overlapping</em> subproblems and
-      solve them independently, like in mergesort and quick sort.
-      </p>
+		</p>
 	</div>
 	</div>
 
