@@ -454,16 +454,18 @@ function(){
       <p class="msg_head">Write pseudocode for HeapSort</p>
 	<div class="msg_body">
 	<pre>
-	Heapsort(A)
-	{
-		A.heapsize = A.length();
-	  	build_heap(A);
+	<code>
+   Heapsort(A)
+   {
+      A.heapsize = A.length();
+      build_heap(A);
 
-	  	for index = A.length() to 2 do
-	            swap(A[1], A[index]);
-	    	   A.heapsize = A.heapsize - 1;
-	    	   heapify(A, 1);
+      for index = A.length() to 2 do
+          swap(A[1], A[index]);
+          A.heapsize = A.heapsize - 1;
+          heapify(A, 1);
 	}
+	</code>
 	</pre>
 	</div>
 	</div>
