@@ -161,8 +161,43 @@ function(){
 	<div class="msg_body">
 		<p>
       $f(n) = \Omega(g(n))$ means there are positive constants c and k, such that $0 \le cg(n) \le f(n)$ for all
-      $n \ge k.
+      $n \ge k$.
       The values of c and k must be fixed for the function f and must not depend on n.
+		</p>
+	</div>
+	</div>
+
+	<div class="msg_list">
+	<p class="msg_head">Write an informal definition of Big $\Omega$</p>
+	<div class="msg_body">
+		<p>
+      A theoretical measure of the execution of an algorithm, usually the time or memory needed,
+      given the problem size n, which is usually the number of items.
+      Informally, saying some equation $f(n) = \Omega(g(n))$ means
+      it is more than some constant multiple of g(n).
+		</p>
+	</div>
+	</div>
+
+	<div class="msg_list">
+	<p class="msg_head">Write an informal definition of Big $\Theta$</p>
+	<div class="msg_body">
+		<p>
+      A theoretical measure of the execution of an algorithm, usually the time or memory needed,
+      given the problem size n, which is usually the number of items.
+      Informally, saying some equation $f(n) = \Theta(g(n))$ means it is within a constant multiple of g(n).
+      The equation is read, "f of n is theta g of n".
+		</p>
+	</div>
+	</div>
+
+	<div class="msg_list">
+	<p class="msg_head">Write a formal definition of Big $\Theta$</p>
+	<div class="msg_body">
+		<p>
+      $f(n) = \Theta (g(n))$ means there are positive constants $c_1, c_2, k$, such that
+      $0 \le c_1g(n) \le f(n) \le  c_2g(n)$ for all $n \le k$.
+      The values of $c1, c2, k$ must be fixed for the function f and must not depend on n.
 		</p>
 	</div>
 	</div>
